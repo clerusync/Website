@@ -45,8 +45,8 @@
                             <p class="product-price text-center">£40.54</p>
                             <h2 class="h3 section-title title text-center">Sizes: S, M, L, XL, 2XL, 3XL, 4XL and 5XL</h2>
                             <be>
-                            <!-- <a href="https://buy.stripe.com/eVqdRb3rC0YX22l7my3ks0f" class="btn btn-secondary">Buy</a> -->
-                            <button onclick="buybutton()" class="btn btn-secondary" type="submit">Buy</button>
+                            <a href="https://buy.stripe.com/eVqdRb3rC0YX22l7my3ks0f" class="btn btn-secondary">Buy</a> 
+                            <!-- <button onclick="buybutton()" class="btn btn-secondary" type="submit">Buy</button> -->
                         </div>
                     </section>
                     </ul>
@@ -63,7 +63,11 @@
                         <a href="https://clerusync.com/Merchandise/" class="footer-bottom-link">Merchandise</a>
                     </div>
                 </div>
-                <p class="copyright"> &copy; 2025 Clerusync Merchandise, All Rights Reserved </p>
+                <p class="copyright">
+                        <script>
+                        document.write((" © Clerusync Merchandise, All Rights Reserved ") + new Date().getFullYear());
+                    </script> 
+                </p> 
             </div>
         </div>
     </footer>
