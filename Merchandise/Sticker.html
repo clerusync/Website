@@ -45,8 +45,8 @@
                             <p class="product-price text-center">£4.75</p>
                             <h2 class="h3 section-title title text-center">Sizes: 3″×3″, 4″×4″, 5.5″×5.5″ and 15″×3.75″</h2>
                             <br>
-                            <!-- <a href="https://buy.stripe.com/9B6dRbaU49vt5exgX83ks0i" class="btn btn-secondary">Buy</a> -->
-                            <button onclick="buybutton()" class="btn btn-secondary" type="submit">Buy</button>
+                            <a href="https://buy.stripe.com/9B6dRbaU49vt5exgX83ks0i" class="btn btn-secondary">Buy</a> 
+                            <!-- <button onclick="buybutton()" class="btn btn-secondary" type="submit">Buy</button>-->
                         </div>
                     </section>
                     </ul>
@@ -62,8 +62,12 @@
                     <div class="link-wrapper">
                         <a href="https://clerusync.com/Merchandise/" class="footer-bottom-link">Merchandise</a>
                     </div>
-                </div>
-                <p class="copyright"> &copy; 2025 Clerusync Merchandise, All Rights Reserved </p>
+                </div>                
+                <p class="copyright">
+                        <script>
+                        document.write((" © Clerusync Merchandise, All Rights Reserved ") + new Date().getFullYear());
+                    </script> 
+                </p> 
             </div>
         </div>
     </footer>
