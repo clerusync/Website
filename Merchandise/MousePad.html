@@ -43,8 +43,8 @@
                             <p class="product-price text-center">£7.00</p>
                             <h2 class="h3 section-title title text-center">Size: 8.7"x7.1"</h2>
                             <be>
-                            <!-- <a href="https://buy.stripe.com/bJebJ3e6gePN4at8qC3ks0h" class="btn btn-secondary">Buy</a> -->
-                            <button onclick="buybutton()" class="btn btn-secondary" type="submit">Buy</button>
+                            <a href="https://buy.stripe.com/bJebJ3e6gePN4at8qC3ks0h" class="btn btn-secondary">Buy</a> 
+                            <!-- <button onclick="buybutton()" class="btn btn-secondary" type="submit">Buy</button> -->
                         </div>
                     </section>
                     </ul>
@@ -60,8 +60,12 @@
                     <div class="link-wrapper">
                         <a href="https://clerusync.com/Merchandise/" class="footer-bottom-link">Merchandise</a>
                     </div>
-                </div>
-                <p class="copyright"> &copy; 2025 Clerusync Merchandise, All Rights Reserved </p>
+                </div>                
+                <p class="copyright">
+                        <script>
+                        document.write((" © Clerusync Merchandise, All Rights Reserved ") + new Date().getFullYear());
+                    </script> 
+                </p> 
             </div>
         </div>
     </footer>
