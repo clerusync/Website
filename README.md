@@ -1,4 +1,4 @@
-# Clerusync
+# Clerusync 
 
 This repository contains the source code for the public-facing website of Clerusync. Digital Solutions, Developing Custom Solutions For Your Business & Project. 
 
