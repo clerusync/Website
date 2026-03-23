@@ -38,8 +38,8 @@ The main files and directories in this repository are:
 *   **`ScreenTest&WaterRemover.html`**: The screen test and water remover tool page.
 *   **`ShareCertificate.html`**: The share certificate page.
 *   **`Spring.html`**: The Spring webpage.
-*   **`TO.html`**: The terms overview page.
-*   **`TermsofService.html`**: The terms of service page.
+*   **`TO.html`**: The TO webpage.
+*   **`TermsofService.html`**: The terms of service webpage.
 *   **`UniversalCareandSupportServicesWebsite.html`**: The Universal Care and Support Services website page.
 *   **`VRS.html`**: The VRS webpage.
 *   **`WordGuess.html`**: The word guessing game page.
