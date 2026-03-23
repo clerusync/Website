@@ -3,7 +3,7 @@
 This repository contains the source code for the public-facing website of Clerusync. Digital Solutions, Developing Custom Solutions For Your Business & Project. 
 
 ## About The Project
-The site includes multiple pages BodaBoost, Clerusync Clean, Clerusync Investment, Cube Climber, Email Unsubscribe, Merchandise, Recollect, Running Log, Screen Test & Water Remover, Screen Test & Water Remover Ad, Clerusync Travel, WordGuess, WordGuessAd and WorkOutLog.
+The site includes multiple folders Boda Boost, Clerusync Clean, Clerusync Investment, Cube Climber, Email Unsubscribe, Merchandise, Recollect, Running Log, Screen Test & Water Remover, Screen Test & Water Remover Ad, Clerusync Travel, Word Guess, Word Guess Ad and Work Out Log.
 
 ### Architecture
 
