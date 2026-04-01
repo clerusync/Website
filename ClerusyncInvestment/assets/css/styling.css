@@ -1,0 +1,387 @@
+
+/* Pricing */
+.pricing-section{
+  padding:60px 20px;
+  }
+  
+  h1{
+  font-size:42px;
+  margin-bottom:10px;
+  }
+
+  .price-dev{
+    font-size:32px;
+    margin-bottom:20px;
+  }
+  
+  .subtitle{
+  font-size:28px;
+  color:#999;
+  margin-bottom:30px;
+  }
+  
+  .toggle{
+  margin-bottom:40px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+  font-size:14px;
+  }
+  
+  /* toggle switch */
+  
+  .switch{
+  position:relative;
+  display:inline-block;
+  width:50px;
+  height:25px;
+  }
+  
+  .switch input{
+  opacity:0;
+  width:0;
+  height:0;
+  }
+  
+  .slider{
+  position:absolute;
+  cursor:pointer;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:#ccc;
+  transition:.4s;
+  border-radius:20px;
+  }
+  
+  .slider:before{
+  position:absolute;
+  content:"";
+  height:19px;
+  width:19px;
+  left:3px;
+  bottom:3px;
+  background:white;
+  transition:.4s;
+  border-radius:50%;
+  }
+  
+  input:checked + .slider{
+  background:#22c55e;
+  }
+  
+  input:checked + .slider:before{
+  transform:translateX(24px);
+  }
+  
+  /* cards */
+  
+  .pricing-container{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
+  }
+  
+  .card{
+  background:white;
+  width:300px;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+  text-align:left;
+  }
+  
+  .card h3{
+  margin:0;
+  font-size:18px;
+  }
+  
+  .billing{
+  color:#777;
+  font-size:14px;
+  margin-bottom:20px;
+  }
+  
+  .card h2{
+    color:#777;
+    font-size:32px;
+    margin-bottom:20px;
+  }
+  
+  .card span{
+  font-size:14px;
+  color:#777;
+  }
+  
+  .includes{
+  font-size:14px;
+  color:#555;
+  margin-bottom:10px;
+  }
+  
+  ul{
+  list-style:none;
+  padding:0;
+  margin-bottom:25px;
+  }
+  
+  ul li{
+  margin:10px 0;
+  color:#333;
+  font-size:14px;
+  }
+  
+  button{
+  width:100%;
+  padding:12px;
+  background:black;
+  color:white;
+  border:none;
+  border-radius:8px;
+  font-size:15px;
+  cursor:pointer;
+  }
+  
+  button:hover{
+  background:#333;
+  }
+  
+  /* highlight card */
+  
+  .highlight{
+  border:2px solid #22c55e;
+  }
+ 
+#languageSelect {
+  padding: 5px;
+  font-size: 14px;
+}
+
+
+/* === Footer === */
+.footer {
+    background: #081321;
+    padding: 40px 0;
+    text-align: center;
+    color: var(--cool-gray);
+  }
+  .footer .footer-links a {
+    color: var(--cool-gray);
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer .footer-links a:hover {
+    color: var(--sapphire);
+  }
+  .footer .logo {
+    margin-bottom: 15px;
+  }
+  :root {
+    --navy:#0A1A2F;
+    --deep:#1C2B3A;
+    --blue:#1E5FFF;
+    --text:#C5C9CC;
+    --white:#fff;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+
+  body{
+    font-family:'Open Sans',sans-serif;
+    background:linear-gradient(180deg,var(--navy),var(--deep));
+    color:var(--text);
+  }
+
+  .container{width:90%;max-width:1100px;margin:auto;}
+
+  header{
+    position:fixed;
+    width:100%;
+    padding:15px 0;
+    background:rgba(10,26,47,0.8);
+    backdrop-filter:blur(10px);
+    z-index:100;
+  }
+
+  .nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+
+  .logo{
+    color:white;
+    font-weight:700;
+    font-family:Montserrat;
+  }
+
+  .nav a{
+    color:var(--text);
+    margin-left:20px;
+    text-decoration:none;
+  }
+
+  /* HERO */
+  .hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:url('https://png.pngtree.com/thumb_back/fh260/background/20240419/pngtree-stock-market-finance-business-economy-trend-graph-digital-technology-image_15664197.jpg') center/cover;
+    position:relative;
+  }
+
+  .hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(10,26,47,0.85);
+  }
+
+  .hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size:40px 40px;
+  }
+
+  .hero-content{
+    position:relative;
+    z-index: 2; 
+    max-width:700px;
+  }
+
+  h1{
+    font-size:2.6rem;
+    background:linear-gradient(90deg,#fff,#9dbfff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-bottom:15px;
+  }
+
+  h2{color:white;margin-bottom:20px;}
+
+  p{margin-bottom:20px;max-width:700px;margin-left:auto;margin-right:auto;}
+
+  .btn{
+    padding:12px 24px;
+    margin:5px;
+    border-radius:6px;
+    text-decoration:none;
+    display:inline-block;
+  }
+
+  .primary{
+    background:var(--blue);
+    color:white;
+    box-shadow:0 0 20px rgba(30,95,255,0.5);
+  }
+
+  .outline{
+    border:1px solid #aaa;
+    color:#aaa;
+  }
+
+  section{padding:90px 0;text-align:center;}
+
+  .grid{
+    display:grid;
+    gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  }
+
+  .box{
+    background:rgba(255,255,255,0.05);
+    padding:25px;
+    border-radius:8px;
+    transition:0.3s;
+  }
+
+  .box:hover{transform:translateY(-5px);}
+
+  /* PRICING */
+  .pricing{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  .card{
+    width:280px;
+    padding:25px;
+    border-radius:12px;
+    background:white;
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.1);
+    color black;
+  }
+
+  .card button{
+    width:100%;
+    padding:10px;
+    background:black;
+    color:white;
+    border:none;
+    margin-top:15px;
+  }
+
+  footer{
+    text-align:center;
+    padding:40px;
+    background:#081321;
+  }
+
+  @media(max-width:768px){
+    .hero{height:auto;padding:120px 20px;}
+    h1{font-size:2rem;}
+  }
+
+  .hero::before,
+.hero::after {
+  pointer-events: none;
+}
+
+.language-switcher {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 999;
+}
+
+#languageSelect {
+  background: rgba(255,255,255,0.05);
+  color: #C5C9CC;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 8px 12px;
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+#languageSelect:hover {
+  border-color: #1E5FFF;
+}
+
+#currencySelect {
+  background: rgba(255,255,255,0.05);
+  color: #C5C9CC;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 8px 12px;
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+#currencySelect:hover {
+  border-color: #1E5FFF;
+}
+ 
