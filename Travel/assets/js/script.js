@@ -44,3 +44,55 @@ window.addEventListener("scroll", function () {
   }
 
 });
+
+/**
+ * image viewer
+ */
+
+  const imageViewer = document.getElementById("imageViewer");
+  const imageViewerImage = document.getElementById("imageViewerImage");
+  const imageViewerClose = document.getElementById("imageViewerClose");
+ 
+  const destinationImages = document.querySelectorAll(
+    ".destinations-card .card-img img"
+  );
+ 
+  destinationImages.forEach((image) => {
+    image.addEventListener("click", function () {
+
+      imageViewerImage.src = this.src;
+      imageViewerImage.alt = this.alt;
+
+      imageViewer.classList.add("active");
+      imageViewer.setAttribute("aria-hidden", "false");
+
+      document.body.classList.add("image-viewer-open");
+    });
+  });
+ 
+  function closeImageViewer() {
+    imageViewer.classList.remove("active");
+    imageViewer.setAttribute("aria-hidden", "true");
+
+    document.body.classList.remove("image-viewer-open");
+ 
+    setTimeout(() => {
+      if (!imageViewer.classList.contains("active")) {
+        imageViewerImage.src = "";
+      }
+    }, 250);
+  }
+ 
+  imageViewerClose.addEventListener("click", closeImageViewer);
+ 
+  imageViewer.addEventListener("click", function (event) {
+    if (event.target === imageViewer) {
+      closeImageViewer();
+    }
+  });
+ 
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && imageViewer.classList.contains("active")) {
+      closeImageViewer();
+    }
+  });
