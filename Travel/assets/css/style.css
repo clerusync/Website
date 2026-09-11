@@ -688,6 +688,7 @@ body { background: var(--white); }
      ========================================= */
   
   .hero-content {
+    color: #fff;
     position: relative;
     z-index: 2;
   }
